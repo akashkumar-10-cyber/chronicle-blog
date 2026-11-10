@@ -1,0 +1,30 @@
+{
+  "name": "chronicle-blog-platform",
+  "version": "1.0.0",
+  "description": "Full-Stack Blogging Platform with Comments, User Dashboard, Admin Operations, and Cloud Database Integration",
+  "main": "server/server.js",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "client": "npm run dev --prefix client",
+    "server": "node server/server.js",
+    "server:dev": "nodemon server/server.js",
+    "seed": "node server/seeder.js",
+    "build": "npm run build --prefix client",
+    "start": "node server/server.js"
+  },
+  "keywords": [
+    "blog",
+    "fullstack",
+    "react",
+    "express",
+    "mongodb",
+    "nodejs",
+    "tailwind"
+  ],
+  "author": "Akash Kumar",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}
